@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
+# Please note
+
+This repository is a study that is on progress about ngrx. The knowledge source is the course "NgRx (with NgRx data)" from Angular University.
+
+I am using the local web server of the original example repo. Aside that, the code here is my interpretation of the content.~~~~
+
+# NgRx (with NgRx Data) - The Complete Guide (FREE E-Book)
+
+# NgRx (with NgRx Data) - The Complete Guide (FREE E-Book)
+
+# NgRx (with NgRx Data) - The Complete Guide (FREE E-Book)
+
+# NgRx (with NgRx Data) - The Complete Guide (FREE E-Book)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
