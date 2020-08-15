@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/services/auth.service';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -15,10 +16,13 @@ import {MatButtonModule} from '@angular/material/button';
     LoginRoutingModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    FormBuilder
   ],
   exports:[
     MatInputModule,

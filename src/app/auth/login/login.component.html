@@ -1,13 +1,13 @@
 <div class="content-wrapper">
-  <form class="example-form">
+  <form class="example-form" [formGroup]="loginForm">
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
-      <input matInput placeholder="Ex. pat@example.com">
+      <input matInput formControlName="email" placeholder="Ex. pat@example.com">
     </mat-form-field>
     <mat-form-field class="example-full-width">
       <mat-label>Password</mat-label>
-      <input matInput>
+      <input matInput formControlName="password">
     </mat-form-field>  
-    <button mat-raised-button color="primary">Entrar</button>    
+    <button (click)="login()" mat-raised-button color="primary">Login</button>    
   </form>
 </div>
