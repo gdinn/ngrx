@@ -21,7 +21,6 @@ import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
     ReactiveFormsModule
   ],
   providers: [
-    AuthService,
     FormBuilder
   ],
   exports:[

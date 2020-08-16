@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { reducers, metaReducers } from './reducers';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthModule } from './auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent
