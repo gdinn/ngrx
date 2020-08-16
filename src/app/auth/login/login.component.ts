@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
-import { Store } from '@ngrx/store';
+import { Store, select } from '@ngrx/store';
 import { AppState } from 'src/app/reducers';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { tap } from 'rxjs/operators'
@@ -8,6 +8,7 @@ import { noop } from 'rxjs';
 import { Router } from '@angular/router';
 import { AuthActions } from '../auth.actions'
 import { UserModel } from '../models/user.model';
+import { isLoggedIn } from '../auth.selectors';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -29,6 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   login() {
