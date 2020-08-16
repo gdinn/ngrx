@@ -6,6 +6,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { tap } from 'rxjs/operators'
 import { noop } from 'rxjs';
 import { Router } from '@angular/router';
+import { AuthActions } from '../auth.actions'
+import { UserModel } from '../models/user.model';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -33,10 +35,10 @@ export class LoginComponent implements OnInit {
     const val = this.loginForm.value;
     this.authService.login(val.email, val.password)
     .pipe(
-      tap(user => {
+      tap((user: UserModel) => {
         console.log(user);
-        //this.store.dispatch(login({user}));
-        this.router.navigateByUrl('/courses');
+        this.store.dispatch(AuthActions.login({user}));
+        this.router.navigateByUrl('/home');
       })
     )
     .subscribe(
